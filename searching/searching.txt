@@ -1,0 +1,22 @@
+linear search on arrays 
+    indexOf
+    includes
+    find
+    findIndex
+    .... all js searching methods , left to right
+    O(n) - its linear 
+
+binary search on sorted arrays 
+    much faster form of search
+    rather than eliminating one element at a time, you can eliminate half of the remaining elements at a time 
+    but only workd on sorted arrays 
+    this function accepts a sorted array and a value
+    create left pointer at the start of the array, and right pointer at the end of the array 
+    while the left pointer comes before the right pointer: 
+        create a pointer in the middle
+        if you find the value you want, return the index 
+        if the value is too small, move the left pointer up
+        if you never find return -1
+        62 is completed
+naive string searching algorith,
+KMP string searching algorith  , 
