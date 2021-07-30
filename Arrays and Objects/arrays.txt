@@ -1,0 +1,20 @@
+// ordered lists
+
+use when you need order
+when you need fast access/ insertion and removal (sort of..)
+insertion it depends //because indexes are changing 
+removal it depends //because indexes are changing 
+searching o(n)
+access o(1)
+
+at the end oush and pop is always faster than shift and unshift methods
+push                             o(1)
+pop                              o(1)
+shift                            o(n)
+unshift                          o(n)
+concat                           o(n)
+slice                            o(n)
+splice                           o(n)
+sort                             o(n*logN)
+forEach/map/filter/reduce/etc..  o(n)
+

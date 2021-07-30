@@ -1,0 +1,13 @@
+// objects when you dont need order 
+// when you beeed queueMicrotask, very fast,
+//  insertion - O(1)
+//  REmoval - o(1)
+//  searching O(N)
+//  access o(1)
+
+big O of objects methods 
+ Object.keys - o(n) //Obkejs.keys(instructorOBJECT)
+ Object.values - o(n)
+ Object.entries - o(n) //Object.entries(instructorOBJECT)
+ hasOwnProperty - o(1) //object property like instructorObject.hasOwnProperty("firstname") returns true/false 
+
