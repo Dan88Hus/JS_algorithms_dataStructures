@@ -1,0 +1,27 @@
+a process or set of steps to accomplish a certain task 
+
+1 devise a plan for solving problems 
+2 master common problem solving patterns 
+
+a undestanding problem
+    george polya book writer, how to solve it is book name
+    restate the problem in my own words 
+    what are inputs 
+    what are outputs 
+    how should I label the important pieces of data that are part of the problem 
+b explore concrete exapmles 
+    start with simple examples 
+    progress to more complex examples 
+    explore examples with empty inputs 
+    explore examples with invalid inputs 
+c break it down 
+    explicitly write out the steps you need to take 
+d solve/simplify
+    find the core diffuculty in what you ae trying to do 
+    temporarily ignore that difficulty
+    write simplified solution 
+    then incorporate that difficulty back in 
+e look back and refactor 
+    check your result 
+
+
