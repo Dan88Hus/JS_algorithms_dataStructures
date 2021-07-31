@@ -17,6 +17,20 @@ binary search on sorted arrays
         if you find the value you want, return the index 
         if the value is too small, move the left pointer up
         if you never find return -1
-        62 is completed
-naive string searching algorith,
-KMP string searching algorith  , 
+        O(logn) is wort case and average case 
+        o(1) is best case 
+
+naive string searching algorithm,
+    suppose you want to count the number of times a smaller string appears in a longer string 
+    a straightforward approach involves checking pairs of charecters individually
+        
+    loopover the longer string
+    loop over thr shorter string 
+    if the characters dont match break out the inner loop
+    if the characters do match keep going 
+    if you complete the inner loop and find a match increment the count of matches 
+    return the count 
+
+
+
+KMP string searching algorithm  , 
