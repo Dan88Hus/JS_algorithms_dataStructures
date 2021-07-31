@@ -1,0 +1,43 @@
+sorting is the process of an rearranging the items in a collection (e.g. an arrray)
+so that the items are in some kind of order 
+ examplees
+ sorting number from smallest to largest 
+JS has built in .sort method but it doesnot work always the way oyu expect 
+
+buble sort
+    sorting algorithm where the largest values buble up to the top 
+    iki rakami karsilastiriyoruz ve swap ediyoruz return degerine gore 
+    start looping from with a variable v=called i the end of the array towards the beginning 
+    start an inner loop with a variable called j from the beginning until i-1 
+    if arr[j] is greater thatn arr[j+1] swap two values
+    return the sorted array
+    O(nSquare) generally , if array is mostly sorted dered its linear time 
+
+selection sort 
+    similar to buble sort, but instead of first placing large values into sorted position,
+    it places small values into sorted position
+    ilk bir degeri sabit tutar digeri ile karsilastirir daha yeni deger kucuksek yeni min olur ve swap yapar 
+    store the first element as the smallest value you have seen so far 
+    compare this item to the next item in the aray until you find a smaller number 
+    if a smaller number is found designate that smaller number to .
+    if the minimum is not the value(index) you initially began with, swap the two values 
+    repeat this with the next element until the array is sorted 
+    O(nSquare) 
+insertion sort 
+burda swap yapmiyoruz baska bir variable deger atamasi yapip onla karsilatiriyoruz 
+    pretty similar to buble sort 
+    builds up the sort by gradually creating a larger left half which is always sorted 
+    hatirliyor yerleri ve sonrakini gerekli yere aliyor solda ki ne gore 
+        onceki degerlerini check ederek 
+    start by picking the second element in the array 
+    now compare the second element with the one before it and swap if neccessary 
+    continue to the next element and if it is in the incorrect order, iterate through the sorted portion
+    (i.e. the left side) to place the element in the correct place 
+    repeat it until the array is sorted and return the array 
+    o(nSquare) in worst cases 
+comparison 
+    screenshot 
+    buble sort, selection sort, insertion sort are all roughly equivalent 
+    all have average time complexities that are quadratic 
+    we can do better.. but we need more complex algorithms 
+    
