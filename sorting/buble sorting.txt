@@ -35,9 +35,29 @@ burda swap yapmiyoruz baska bir variable deger atamasi yapip onla karsilatiriyor
     (i.e. the left side) to place the element in the correct place 
     repeat it until the array is sorted and return the array 
     o(nSquare) in worst cases 
-comparison 
+comparison of selection/insertion/buble sort 
     screenshot 
     buble sort, selection sort, insertion sort are all roughly equivalent 
     all have average time complexities that are quadratic 
     we can do better.. but we need more complex algorithms 
-    
+faster sorts (these family sorting algorthims that can improve time complexity from o(nSquare) to O(nLogn))
+from o(nSquare) to o(nlogn) 
+trade off between efficiency and simplicity
+
+    merge sort
+        its a combination of 2 things - merginf and sorting 
+        we dividing array to split up hal half and half then we merge them together 
+        by comparing left to right on each smaller array then merge 
+        create an empty array, take aloot at the smallest values in each input array 
+        while there are still values we havenot looked at...
+            if the value in the first array is smaller than the value in the second array,
+            push the value in the first array into our results and move on to the next value in the first array 
+            if the value in the first array is larger than the value in the second array, push the value in the second array into our results and move on the next value in the second array 
+            once we exhaust one array, push in all remaining values from the other array 
+        -----------
+        break up the array into halves until you have arrays that are empty or have one element 
+        once you have smaller sorted arrays, merge those arrays with other sorted arrays until you are back at the full length of the array 
+        once the array has been back together return the merged(and sorted) array
+        
+    quick sort
+    radix sort 
