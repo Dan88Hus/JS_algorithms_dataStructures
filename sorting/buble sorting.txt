@@ -1,3 +1,4 @@
+all sorting algorithms area based on comparison sorts 
 sorting is the process of an rearranging the items in a collection (e.g. an arrray)
 so that the items are in some kind of order 
  examplees
@@ -90,7 +91,33 @@ trade off between efficiency and simplicity
         when the helper returns to you the updated pivot index recursively call the pivot helper on the subarray to the left of that index and the 
             subarray to the right of that index 
         your base case occurs when you consider a subarray with less than 2 elements 
-        
-        
-
+        O(logn)
+        o(n) for comparison per decomposotion 
     radix sort 
+        we dont make direct compare datas
+        is sort is a special sorting algorithm that works on lists of numbers
+        it never makes comparisons between elements 
+        it exploits the fact that information about the size of a number is encoded in the number of digits
+        more digits means a bigger number, not comparing numbers 
+        birler basamagindaki rakama gore ayristirilir, mesela kovalara ilk basamak numarlarina gore ayrilir daha sonra tek array gibi yan yana getirilir
+        arkasindan tekrar kovalara gore ayristirma yapilir ama busefer onlar basamagina gore ayristilirir , boylelikle sortin kendiliginden gerceklesir 
+        integer sorting, not float numbers 
+        in order to implement radix sort it is helpful to build a few helper functions first
+        getDigit(num,place) - returns the digit in num at given place value 
+        7323 orneginde getDigit(7323,2) olur cunku sondan 0,1,2
+        ----
+        radix sort helpers
+        in order to implement radix sort, it is helpful to build a few helper functions first:
+        we need to know how many digits we have in largest number 
+        1st method: digitCount(num)-returns the number of digits in num 
+        2nd method: mostDigits(nums) - given an array of numbers, returns the number of digits in the largest numbers in the list 
+        ------
+        define a function that accepts list of numbers 
+        figure out how many digits the largest number has 
+        loop from k=0 up to theis largest number of digits 
+        for each iteration of the loop: 
+            create buckets for each digit (0 to 9)
+            place each number in the corresponding bucket based on kth digit 
+        replace our existing array with values in our buckets starting with 0 and going up to 9 
+        return list at the end 
+        
