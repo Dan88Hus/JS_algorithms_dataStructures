@@ -1,0 +1,6 @@
+are collections of values, the relationships among them and the functions or operations that can be applied to the data 
+different data structures excel at different things. some are highly specialized, while others(like arrays) are more generally used,
+working with map/location data? use graph theory 
+
+the class keyword created a constant, so you can no redefine it. 
+the method to CREATE NEW OBJECTs must be called constructor
