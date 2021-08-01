@@ -1,0 +1,102 @@
+ordered just like an array, in array its indexed but linked list is not indexed
+
+a data structure that contains a head(beginneing), tail(end) and length property
+    so we cant track the list in the middle
+    middlewares gibi next diyerek ancak takib edebiliyoruz 
+
+linked list consist of nodes and each node has a value and a pointer to another node or null 
+
+
+compare and contrast linked list with arrays
+    lists
+        dont have indexes 
+        connected via nodes with a next pointer 
+        random access is not allowed 
+    arrays 
+        indexed in order 
+        insertion and deletion can be expensive 
+        can quickly be accessed at a specific index 
+
+
+implement insertion, removal, traversal methods on singly linked list  
+pushing pseudocode
+    this function should accept a valuecreate a new node using the value passed to the function 
+    if there is no head property on the list, set the head and tail to be the newly created node 
+    otherwise set the next property on the tail to be the new node and set tail propeerty on the list to be newlycreated node
+    increment length by one 
+    return the lisnked list 
+pop
+    removing a node from the end of the linked list 
+
+pop pseudocode
+    if there are no nodes in the list, return undefined 
+    loop through the list until you reach the tail
+    set the next property of the 2nd to last node to be null 
+    set the tails to be the 2nd to last node 
+    decrement the length of the list by 1
+    return the value of the node removed 
+shift
+    removing a new node from the beginning of the linked list 
+shift pseudocode
+    if there are no nodes, return undefined 
+    store the current head property in a variable 
+    set the head property to be the current heads next property 
+    decrement the length by 1 
+    return the value of the node removed 
+unshift
+    adding a new node to the beginning of the linked list 
+unshift pseudocode 
+    this function should accept a c=value 
+    create a new node using the value passed to the function 
+    if there is no head property on the list set the head and tail to be newly created node 
+    otherwise set the newly created node's next property to be the current head property on the list 
+    set the head property on the list to be that newly created node 
+    increment the length of the list by 1 
+    return the linked list 
+Get
+    retrieving a node by its position in the linked list 
+get pseudocode 
+    this function should accept an index
+    if the index is less than zero or greater than or equal to the length of the list, return null 
+    loop through the list until you reach the index and return the node at that specific index 
+set
+    changing the value of a node based on its position in the linked list 
+set pseudocode 
+    this function should accept a value and a index 
+    use your get function to find the specific node 
+    if the node is not found , return false 
+    if the node is found set the value of that node to be the value passed to the function and return true 
+insert 
+    adding a node to the linked list at a position at a specific position
+insert pseudocode
+    if the index less than or greater than length return false 
+    if the index is the same as the length push a new node to the end of the list 
+    if the index is 0 unshift a new node to the start of the list 
+    otherwise using the get method access the node at the index -1 
+    set the next proprty on that node to be the new node 
+    set the next property on the new node to be the previous next 
+    incrememnt the length
+    return true 
+remove
+    removing a node from the linked list at a specific position 
+remove pseudocode 
+    if the index is less than zero or greater than the length return undefined 
+    if the index is the same as the length-1 pop 
+    if the index is 0 shift 
+    otherwise using the get method access the node at the index -1 
+    set the next proprty on that node to be the next of the next node 
+    decrement the lenght 
+    return the value of node removed 
+reverse 
+    reversing the linked list in place 
+reverse pseudocode
+    swap the head and tail
+    create a variable called next 
+    create a variable called prev 
+    create a variable called node and initialize it to the head property 
+    loop through the list 
+    set next to be the next property on whatever node is 
+    set the next proprty on the node to be whatever prev is 
+    set prev to be the value of the node variable 
+    set the node variable to be the value of the next variable 
+
