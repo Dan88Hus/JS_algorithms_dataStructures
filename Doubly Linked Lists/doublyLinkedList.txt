@@ -1,0 +1,24 @@
+Almost identical to singly linked lists, except every node has another pointer to the previous node 
+burda next sadece degil, previous item var ayni zamanda 
+single linked listte back gidemiyoruz, ama doubly de more easy to go back 
+more memory === more flexibility doubly linked list 
+pushing pseudo 
+    create a new node with the value passed to the function 
+    if the head property is null set the head and tail to be newly created node 
+    if not, set the next property on the tail to be that node 
+    set the previous property on the newly created node to be the tail 
+    set the tail to be newly created node 
+    incrememnt the length 
+    return the doubly linked list 
+pop is removing a node from the end of doubly linked list 
+pseudo 
+    if there is no head, return undefined 
+    store the current tail in a variable to return to be null 
+    if the lenght is 1 set the head and tail to be null 
+    update the tail to be the previous node 
+    set the newTails' next to null 
+    decrement length 
+    return the value removed 
+shifting removing a node from the beginning of the doubly linked list 
+pseudo 
+    
