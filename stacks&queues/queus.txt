@@ -1,0 +1,29 @@
+queues - FIFO 
+    mostly will be used array
+    javascript built in methods 
+
+background tasks
+downloading/uploading resources 
+printing/task processing 
+enqueue pseudo
+    this function accepts some value
+    create a new node using that value passed to the function 
+    if there are no nodes in the queue, set this node to be the first and last property of the queue 
+    otherwise, set the next property on the current last yo be that node, and then set the last property of the queue to be that node 
+    increment the size of the queue by 1 
+    return incremented size 
+
+dequeue pseudo
+    if there is no first property, just return null 
+    store the first property in a variable 
+    see if the first is the same as the last (check if there is only 1 node). if so set the first and last to be null 
+    if there is more than 1 node set the first property to be next property of first 
+    decrement the size by 1 
+    return the value of the node dequeued 
+
+big o
+    insertion o(1)
+    removal o(1)
+    searching o(n)
+    access o(n)
+    
