@@ -36,6 +36,4 @@ big O of stacks
     searching o(n)
     access o(n)
 
-queues - FIFO 
-
 
