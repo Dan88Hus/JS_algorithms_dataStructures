@@ -20,5 +20,26 @@ pseudo
     decrement length 
     return the value removed 
 shifting removing a node from the beginning of the doubly linked list 
+pseudo 137
+    if lenght is 0, return undefined 
+    stpre the current head property in avariable(we ll call ot old head )
+    if the lenght is one 
+        set the head to be null 
+        set the tail to be null 
+    update the head to be the next of the old head 
+    set the heads' prev property to null 
+    decrement the length
+    return old head 
+unshifting - adding a node to the beginning of the doubly linked list 
 pseudo 
+    create a node with the value passed to the function
+    if the length is 0 
+        set the head to be the new node
+        set the tail to be the new node 
+    otherwise
+        set the prev property on the head of the list to be the new node 
+        set the next property on the new node to be the head property 
+        update the head to be the new node 
+    increment the lenghth 
+    return the list 
     
