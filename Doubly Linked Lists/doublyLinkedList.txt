@@ -42,4 +42,19 @@ pseudo
         update the head to be the new node 
     increment the lenghth 
     return the list 
-    
+    GET - accessing a node in a doubly linked list by its postion 
+    pseudo 
+        if the index is less than 0 or greater or equeal to the length, return null 
+        if the index is less than or equal to half the length of the list 
+            loop through the list starting from thr head and loop towards the middle 
+            return the node once it is found 
+        if the index is greater than half the lengthof the list 
+            loop through the list starting from the tail and loop towards the middle 
+            return the node once it is found 
+    SET - replacing the value of node to the in a doubly linked list 
+    pseudo 
+        create a variable which is the result of the get method at the index passed to the function
+            if the get method returns a valid node, set the value of that node to be the value passed to the function 
+            return true 
+        otherwise return false 
+        
