@@ -60,4 +60,7 @@ if it is less
     check to see if there is a node to the left 
         if there is move to that node and repeat these steps 
         if there is not, we are done searching 
-        
+
+Big O of BST 
+insertion o(log n)
+searching o(log n)
